@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "proyDiscapacidad": {
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "proyDiscapacidad"
+    }
+  },
+  "defaultProject": "proyDiscapacidad",
+  "cli": {
+    "analytics": "0344e856-2717-4449-bad8-c42189a1d9d4"
+  }
 }
