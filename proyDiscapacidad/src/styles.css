@@ -1,1 +1,78 @@
 /* You can add global styles to this file, and also import other style files */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: red;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: white;
+  }
+  .footer {
+    position: fixed;
+    left: 5px;
+    bottom: 0;
+    width:99.5%;
+    background-image: url(../src/assets/footer.png);
+    color: black;
+    text-align: center;
+    
+    height: 37%;
+ }
+.Username
+{
+    width: 500px;
+}
+.input-group{
+    top: 30px;
+    left: 30px;
+}
+
+#Password{
+    top: 60px;
+}
+
+.login{
+
+    background-color: brown;
+    width: 50%;
+    height: 300px;
+    margin-left: 350px;
+    
+}
+
+.button {
+    background-color: white;
+    border-width: 1ch;
+    border-color: brown;
+    color: white;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    color: brown;
+  
+  }
+
+  .button4 
+{   border-radius: 12px;
+    margin-left: 260px;
+    margin-top: 70px;
+}
+
+  
