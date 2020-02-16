@@ -7,6 +7,10 @@ import { MenubarComponent } from './menubar/menubar.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatCardModule} from '@angular/material/card';
+import { AnuncioComponent } from './anuncio/anuncio.component';
+
 
 const routes:Routes = [
   {path:'home', component: HomeComponent},
@@ -19,11 +23,14 @@ const routes:Routes = [
     AppComponent,
     LoginComponent,
     MenubarComponent,
-    HomeComponent
+    HomeComponent,
+    AnuncioComponent
   ],
   imports: [
     BrowserModule,
     NgbModule,
+    BrowserAnimationsModule,
+    MatCardModule,
     RouterModule.forRoot(routes)
   ],
   providers: [HomeComponent, LoginComponent,{provide: APP_BASE_HREF, useValue : '/' }],

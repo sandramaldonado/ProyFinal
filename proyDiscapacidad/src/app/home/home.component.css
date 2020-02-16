@@ -1,0 +1,39 @@
+#Titulo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    font-style: normal;
+}
+
+#Imagen{
+    height: 200px;
+    width: 250px;
+    margin-top: -30px;
+    margin-left: 2px;
+}
+.example-card{
+    border-color: brown;
+    border-style: groove;
+    border-width: 1px;
+    border-radius: 5px;
+    width: 300px;
+}
+#Col{
+    margin-right: 90px;
+}
+
+.buttonNews {
+    background-color: white;
+    border-width: 0.8px;
+    border-color: brown;
+    color: white;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    color: brown;
+    border-radius: 12px;
+   
+  
+  }
+
