@@ -10,11 +10,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import { AnuncioComponent } from './anuncio/anuncio.component';
+import { DonacionesComponent } from './donaciones/donaciones.component';
 
 
 const routes:Routes = [
   {path:'home', component: HomeComponent},
-  {path:'login', component: LoginComponent}
+  {path:'login', component: LoginComponent},
+  {path:'donaciones', component: DonacionesComponent}
 
 ];
 
@@ -24,7 +26,8 @@ const routes:Routes = [
     LoginComponent,
     MenubarComponent,
     HomeComponent,
-    AnuncioComponent
+    AnuncioComponent,
+    DonacionesComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +36,7 @@ const routes:Routes = [
     MatCardModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [HomeComponent, LoginComponent,{provide: APP_BASE_HREF, useValue : '/' }],
+  providers: [HomeComponent, LoginComponent,{provide: APP_BASE_HREF, useValue : '/' }, DonacionesComponent],
   bootstrap: [AppComponent],
   exports:[RouterModule]
 })
