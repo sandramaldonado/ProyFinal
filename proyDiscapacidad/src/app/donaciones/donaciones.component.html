@@ -1,4 +1,26 @@
+<div class="banner" style="position: relative; top:100px">
+    
+    
+</div>
+<div class="tituloBanner" style="position: absolute; left: 300px; top: 250px; "></div>
+<div class="Anuncios"style="position: absolute; left: 400px; top: 300px;">
+  ANUNCIOS DE TRABAJOS, DONACIONES Y APORTES
+  
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Dropdown button
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+    </div>
+  </div>
+  
+</div>
+
 <div class="container">
+
     <div class="row">
       <div class="col-md-3 my-5" id="Col" *ngFor="let anuncio of anuncios" >
         <mat-card class="example-card">
@@ -9,7 +31,7 @@
             <img id="Imagen"mat-card-image src="{{anuncio.Imagen}}" >
             <mat-card-title id="Titulo">{{anuncio.Titulo}}</mat-card-title>
             <mat-card-content>
-              <p>
+              <p class="descripcion">
                 {{anuncio.Descripcion}}
               </p>
             </mat-card-content>

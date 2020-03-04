@@ -4,33 +4,35 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: white;
+    background-color: #590209;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
   }
   
   li {
     float: left;
+    margin-top: 2%;
   }
   
   li a {
     display: block;
-    color: red;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   
   li a:hover {
-    background-color: white;
+    background-color: #730202;
   }
   .footer {
-    position: fixed;
-    left: 5px;
+    position: absolute;
     bottom: 0;
-    width:99.5%;
-    background-image: url(../src/assets/footer.png);
+    width: 100%;
     color: black;
-    text-align: center;
-    height: 37%;
+   
   
  }
 .Username
@@ -54,12 +56,7 @@ ul {
     margin-left: 350px;
     
 }
-.mainbody{
 
-  background:url("../src/images/fondologin.jpg") 50% 0 no-repeat fixed;
-  
-  
-}
 .button {
     background-color: white;
     border-width: 1ch;

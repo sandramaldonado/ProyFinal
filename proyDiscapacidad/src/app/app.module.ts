@@ -11,7 +11,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import { AnuncioComponent } from './anuncio/anuncio.component';
 import { DonacionesComponent } from './donaciones/donaciones.component';
-
+import { SliderModule } from 'angular-image-slider';
+import { SliderComponent } from './slider/slider.component';
+import {MatSelectModule} from '@angular/material/select';
 
 const routes:Routes = [
   {path:'home', component: HomeComponent},
@@ -27,16 +29,19 @@ const routes:Routes = [
     MenubarComponent,
     HomeComponent,
     AnuncioComponent,
-    DonacionesComponent
+    DonacionesComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,
+    SliderModule,
+    MatSelectModule,
     NgbModule,
     BrowserAnimationsModule,
     MatCardModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [HomeComponent, LoginComponent,{provide: APP_BASE_HREF, useValue : '/' }, DonacionesComponent],
+  providers: [HomeComponent,SliderComponent, LoginComponent,{provide: APP_BASE_HREF, useValue : '/' }, DonacionesComponent],
   bootstrap: [AppComponent],
   exports:[RouterModule]
 })
